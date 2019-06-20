@@ -12,6 +12,7 @@
     "clear": "rm -rf node_modules build"
   },
   "dependencies": {
+    "browserslist": "^4.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
@@ -28,12 +29,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "browserslist": [],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged && CI=true npm test"
